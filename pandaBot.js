@@ -20,6 +20,16 @@ bot.on('message', msg => {
         return;
     }
 
+    /*Se o bot ver uma mensagem iniciada com o emoji "👀" ele responde o emoji "👀"*/
+    if (msg.content.startsWith("👀")){
+        msg.channel.send("👀");
+    }  
+
+    /*Se o bot ver uma mensagem iniciada com o emoji "🫂"(people hugging) ele responde o emoji "🫂"(people hugging) */
+    if (msg.content.startsWith("🫂")){
+        msg.channel.send("🫂");
+    }  
+
     /*Se o bot ver uma mensagem iniciada em "pipoca" ele responde "Você disse "pipoca?"*/
     if (msg.content.toLocaleLowerCase().startsWith("pipoca")){
         msg.channel.send('Você disse pipoca?');
